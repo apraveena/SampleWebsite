@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Welcome to Codeyoung</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Codeyoung</h1>
+    </div>
+    <div>
+        <ul>
+            <li class="nav"><a href="index.html" target="_blank">Home</a></li>
+            <li class="nav"><a href="about.html" target="_blank">About</a></li>
+            <li class="nav"><a href="viewCourses.html" target="_blank">View Courses</a></li>
+            <li class="nav"><a href="explore.html" target="_blank">Explore</a></li>
+            <li class="nav"><a href="blogs.html" target="_blank">Blogs</a></li>
+        </ul>
+    </div>
+    <!--Html forms-->
+    <!-- input is an empty tag-->
+    <h1>Registration form</h1>
+    <!-- when method is get, we see query parameters in the address bar-->
+    <!-- if data is confidential/sensitive or dont want to show in the query, use post-->
+    <form method="post">
+        <label>First Name:</label>
+        <input type="text" name="fname" id=""><br><br>
+        <label>Last Name:</label>
+        <input type="text" name="lname" id=""><br><br>
+        <label>Age:</label>
+        <input type="number" name="age" id=""><br><br>
+        <label>Email address:</label>
+        <input type="email" name="email" id=""><br><br>
+        <label>Password:</label>
+        <input type="password" name="password" id=""><br><br>
+        <label>Choose your favorite color:</label>
+        <input type="color" name="color" id=""><br><br>
+        <label>Date of joining:</label>
+        <input type="date" name="date" id=""><br><br>
+        <label>Gender:</label>
+        <input type="radio" name="Gender" id="">Female
+        <input type="radio" name="Gender" id="">Male <br><br>
+        <label>Coding languages known</label>
+        <input type="checkbox" name="language" id="">Html
+        <input type="checkbox" name="language" id="">css
+        <input type="checkbox" name="language" id="">Python
+        <input type="checkbox" name="language" id="">Java
+        <input type="checkbox" name="language" id="">C#.net
+        <br><br>
+        <label>Select your country:</label>
+        <select name="country" id="">
+            <option value="-1">Select your country</option>
+            <option value="1">US</option>
+            <option value="2">India</option>
+            <option value="3">UK</option>
+        </select><br><br>
+        <label>Hobbies: </label>
+        <select name="hobbies" id="" multiple>
+            <option value="1">Basketball</option>
+            <option value="2">Dancing</option>
+            <option value="3">Soccer</option>
+            <option value="4">Table tennis</option>
+        </select><br><br>
+        <label>Upload Resume: </label>
+        <input type="file" name="resume" id=""><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
